@@ -3,7 +3,7 @@
 body {
     font-family: 'Source Sans Pro', sans-serif;
     margin-top: 2em;
-    margin-bottom: 3em;
+    margin-bottom: 2em;
     margin-left: 5em;
     margin-right: 5em;
     background-color: #eee;
@@ -11,9 +11,7 @@ body {
 }
 .newspaper-container {
     background-color: white;
-    padding-top: .75em;
-    padding-left: .75em;
-    padding-right: .75em;
+    padding: .75em;
     border-radius: .5em;
     box-shadow: 10px 5px 5px#ddd;
     width: 700px;
@@ -42,24 +40,27 @@ main h5 {
 }
 p {
     text-align: justify;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: 4px;
+    padding-right: 4px;
 }
 img {
     width: 700px;
     max-width: 100%;
     height: auto;
     }
-nav {
-    text-align: center;
+nav, footer {
+    position: sticky;
+    top: 0px;
+    background-color: inherit;
+     text-align: center;
     font-size: .9em;
 }
-nav ul {
+nav ul, footer ul {
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
     padding: .5em;
 }
-nav li {
+nav li, footer li {
     display: inline;
     padding: .5em;
 }
@@ -67,14 +68,21 @@ a {
     text-decoration: none;
     color: #777;
 }
-
 .more-articles {
     border-top: 1px solid #eee;
 }
-
-.more-articles section{
+.more-articles section {
     display: inline-block;
     width: 45%;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.bonus-articles {
+    border-top: 1px solid #eee;
+}
+.bonus-articles section {
+    display: inline-block;
+    width: 28%;
     margin-left: 1em;
     margin-right: 1em;
 }
